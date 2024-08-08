@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <!-- ----- Start ---Navigation Bar------ -->
+            <nav>
+                <img src="Images/logo1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- ----- End ---Navigation Bar------ -->
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Sakshi</span><br>Nagare From India</h1>
+                <div class="change-text">
+                <h3>And I'm</h3>
+                <h3>
+                        <span class="word"> Web&nbsp;Designer</span>
+                        <span class="word"> Frontend&nbsp;Designer</span>
+                </h3>
+                </div>
+            </div>
+            
+            <div class="photo">
+                <img src="Images/p8.png" alt="photo">
+            </div>
+
+
+        </div>
+    </div>
+    <!-- //------------------------------------------ABOUT------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-cl-1">
+                    <img src="Images/p3.jpg" alt="">
+                </div>
+                <div class="about-cl-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Education and Identity')">Education and
+                            Identity</p>
+                        <p class="tab-links" onclick="opentab('Academic Pursuits')">Academic Pursuits</p>
+                        <p class="tab-links" onclick="opentab('Beyond Academics')">Beyond Academics</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education and Identity">
+                        <ul>
+                            <li><span>Introduction</span><br>
+                                <p>Hi there! I'm Sakshi Sunil Nagare, currently pursuing a Bachelor's in Computer
+                                    Science at Savitribai Phule Pune University.</p>
+                            </li>
+                            <li><span>Educational Focus </span><br>
+                                <p>Exploring the exciting world of computer science in the lively environment of Nashik,
+                                    Maharashtra.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Academic Pursuits">
+                        <ul>
+                            <li><span>Passion for Web Development</span><br>Engaged in the world of web development
+                                within computer science studies, captivated by the intricacies of designing and building
+                                web-based solutions.</li>
+                            <li><span>Interest in Data Structures</span><br>Intrigued by the dynamics of data
+                                structures, exploring their complexities and functionalities as a foundational aspect of
+                                computer science expertise.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Beyond Academics">
+                        <ul>
+                            <li><span>Marathi Poetry Enthusiast</span><br>I indulge in writing Marathi poems, finding
+                                joy and inspiration in crafting verses beyond my academic pursuits.</li>
+                            <li><span>Passionate Dancer</span><br>Dancing is another passion that brings vibrancy and
+                                balance to my life, allowing me to express myself creatively beyond the academic realm.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------End about---------------------------------- -->
+
+    <!-- ----------------------------------Start Skills------------------------------------------- -->
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+
+            <div class="progress-side">
+                <div class="progress-container">
+                    <span class="progress-label">HTML and CSS</span>
+                    <span class="progress-value">80%</span>
+                    <progress value="80" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+
+                <div class="progress-container">
+                    <span class="progress-label">Programming Language</span>
+                    <span class="progress-value">70%</span>
+                    <progress value="70" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+            </div>
+            <div class="progress-side">
+                <div class="progress-container column">
+                    <span class="progress-label ">MySql</span>
+                    <span class="progress-value">80%</span>
+                    <progress value="80" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+
+                <div class="progress-container column">
+                    <span class="progress-label">Data structure and Algorithm</span>
+                    <span class="progress-value">60%</span>
+                    <progress value="60" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+            </div>
+
+            <div class="progress-side">
+                <div class="progress-container column">
+                    <span class="progress-label ">Teamwork</span>
+                    <span class="progress-value">70%</span>
+                    <progress value="70" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+
+                <div class="progress-container column">
+                    <span class="progress-label">Communication</span>
+                    <span class="progress-value">80%</span>
+                    <progress value="80" max="100">
+                        <p>90%</p>
+                    </progress>
+                </div>
+            </div>
+
+            <!-- 
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur esse alias laborum sint nulla tenetur dolor vitae eligendi sapiente, illo nobis mollitia exercitationem officiis sed neque, pariatur, quibusdam ipsam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur esse alias laborum sint nulla tenetur dolor vitae eligendi sapiente, illo nobis mollitia exercitationem officiis sed neque, pariatur, quibusdam ipsam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consectetur esse alias laborum sint nulla tenetur dolor vitae eligendi sapiente, illo nobis mollitia exercitationem officiis sed neque, pariatur, quibusdam ipsam.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- ------------------------------------portfolio--------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/p10.jpg" alt="">
+                    <div class="layer">
+                        <h3>QuickSend</h3>
+                        <p>The Courier Management Website, built using HTML/CSS (frontend) and PHP/MySQL (backend),
+                            offers features like user registration, parcel booking, tracking, secure payments, and admin
+                            tools. Its aim is to simplify courier services via an intuitive online platform.</p>
+                        <a href="#"><i class="fas fa-box"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/p13.avif" alt="">
+                    <div class="layer">
+                        <h3>FoodRush</h3>
+                        <p>The Online Food Delivery Website features a user-friendly home page highlighting restaurants
+                            and cuisines, a service page for easy ordering, and a contact section for customer support,
+                            enabling effortless food selection, ordering, and assistance.</p>
+                        <a href="#"><i class="fas fa-box"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/p6.avif" alt="">
+                    <div class="layer">
+                        <h3>School ERP</h3>
+                        <p>The PAHMV School ERP System is an easy-to-use tool for managing schools. It uses React, MongoDB, and Django. The system handles student records, teacher tasks, and school admin work. It tracks academic records, schedules, and assignments while improving communication and saving time.</p>
+                        <a href="#"><i class="fas fa-book"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!-- -----------------------------------------start redume-------------------------------- -->
+<div id="resume">
+    <div class="container">
+        <div class="resumepic">
+            <img src="Images/p16.avif" alt="">
+            <div class="content">
+                <h2>Unveiling My Journey: Let's Explore Professionally!</h2>
+                <p>My resume is a snapshot of my skills and achievements.</p>
+                <a href="Images/cv.pdf" class="btn btn2" download>Dowload CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------------------------------end resume-------------------------------------------- -->
+    <!-- _______________________contact___________________________ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sakshinagare0411@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>478556622</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                        <input type="text" id="phone" placeholder="phone no" required>
+                        <textarea name="message"  rows="6" id="message"placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2 send"> Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @sakshi made by <i class="fas fa-heart"></i>sakshi</p>
+        </div>
+    </div>
+
+    <!-- -----------------------------------end contact--------------------------------- -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

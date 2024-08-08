@@ -1,0 +1,664 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    background: #080808;
+    color: #fff;
+}
+
+
+/* -----------start header------------------- */
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo
+{
+    height:130px;
+    margin:-15px 9px;
+    width: 140px;
+}
+.container
+{
+    padding: 10px 10%;
+
+}
+
+/* -------start Navbar------- */
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -9px;
+    position: sticky;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after 
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+/* -------End Navbar------- */
+
+.photo{
+    margin-top: -300px;
+    margin-left: 63%;
+    width: 500px;
+    height: 100%;
+    
+
+}
+
+
+.header-text
+{
+    margin-top:15%;
+    font-size: 30px;
+}
+.header-text h1
+{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.change-text{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.change-text h3{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+.change-text h3 .word{
+    position:absolute;
+    display: flex;
+    opacity: 0;
+    color: #ff004f;
+
+}
+
+.change-text h3 .word .letter{
+    transform-origin: center center 25px;
+
+}
+
+.change-text h3 .word .letter.out{
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+}
+
+.change-text h3 .word .letter.in{
+    transition: 0.38s ease;
+}
+
+.change-text h3 .word .letter.behind{
+    transform: rotateX(-90deg);
+}
+
+/* -----------------End header----------------------- */
+
+/* ------------------------- Start ABOUT--------------------------- */
+
+#about{
+    padding: 60px 0px ;
+    color: #ababab;
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-cl-1{
+    flex-basis: 40%;
+}
+
+.about-cl-1 img{
+    width: 80%;
+    border-radius: 15px;
+    height: 90%;
+}
+
+.about-cl-2
+{
+    flex-basis: 60%;
+
+}
+
+.sub-title
+{
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-title
+{
+    display: flex;
+    margin: 20px 0 40px;
+    font-size: 60px;
+}
+
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 70%;
+}
+
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 35px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+
+}
+/* ------------------------End about------------------------ */
+
+
+/* -------------------------------Start Skills-------------------------------------- */
+#Skills
+{
+    padding: 50px 0;
+
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px ;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,trasform 0.5s;
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    /* color: #fff; */
+
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+    
+}
+
+.progress-side {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    height: 100%;
+
+}
+.progress-container {
+    position: relative;
+    width: 45%;
+    margin: 20px 0;
+}
+  
+  progress {
+    width: 80%;
+    height: 30px;
+    appearance: none;
+    border-radius: 10px;
+    overflow: hidden; 
+    margin-top: 10px;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #ddd; /* Background color of the progress bar */
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #ff004f; 
+    border-radius: 10px;/* Color of the progress bar */
+  }
+  
+  .progress-label {
+    position: absolute;
+    top: -25px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin: -5px 0 10px 2px;
+  }
+
+  .progress-value {
+    position: absolute;
+    top: -4px;
+    left: 85%;
+    color: #fafafa;
+    font-weight: bold;
+    font-size: 25px;
+    top: 27%;
+  }
+
+  .progress-container.column {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%; /* Adjust width as per your layout */
+    
+}
+/* ------------------------------end skills--------------------------------- */
+
+/* --------------------------Start project------------------------- */
+#portfolio
+{
+    padding: 50px 0;
+    
+}
+
+.work-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: trasnform 0.5s;
+}
+
+.layer
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3
+{
+    font-weight: 500;
+    margin-bottom: 20px;
+   
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.layer a i{
+    color: black;
+    background-color: #fafafa;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+
+}
+
+.work:hover .layer{
+    height: 100%;
+
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #ff004f;
+    transition: 0.5s;
+}
+/* --------------------------------End project------------------------------------- */
+/* -------------------------start resume---------------------------------- */
+#resume{
+    padding: 50px 0;
+    /* margin: 0; */
+    position: relative;
+}
+
+.resumepic img {
+    
+    position: absolute;
+    background:  no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+    background-color: #262626;
+}
+
+.content h2
+{
+    color:aliceblue;
+    text-align: center;
+    font-family: 'Bree Serif',serif;
+    font-size: 3.5rem;
+    margin-top: 10%;
+}
+
+.content p
+{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif',serif;
+    font-size: 2rem;
+
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.content .btn2{
+    display: block;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin: 20px auto ;
+   
+    cursor: pointer;
+    text-align: center;
+}
+
+/* -------------------------------end resume---------------------------------- */
+/* ---------------------------------------contact-------------------------------- */
+
+#contact
+{
+    padding-top: 150px ;
+   
+}
+.contact-left
+{
+    flex-basis: 35%
+    
+}
+
+.contact-right
+{
+    flex-basis: 60%
+ 
+}
+
+.contact-left p
+{
+    margin-top: 30px;
+    
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+    color: #ff004f;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: trasform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+
+.contact-right form
+{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    columns: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.send{
+    font-size: 18px;
+    border: 0;
+    outline: none;
+   
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #262626;
+    font-weight: 300;
+
+}
+.copyright i{
+    color: #ff004f;
+}
+ /* ----------------------css for small screen---------------------- */
+ nav .fas
+ {
+    display: none;
+ }
+ @media only screen and (max-width:600px){
+    #header{
+        background-image: url(Images/p4.avif);
+    }
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+
+    }
+
+    nav .fas
+    {
+    display: block;
+    font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    .about-cl-1, .about-cl-2{
+        flex-basis: 100%;
+    }
+
+    .about-cl-1{
+        margin-bottom: 30px;
+    }
+
+    .about-cl-2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+ }
